@@ -27,7 +27,7 @@ if [ ! "$PID" == "" ]; then
 else
   DOSTART="false"
 fi
-echo "epibot server stopped successfully, proceeding with tests"
+echo "The epibot server stopped successfully, proceeding with tests"
 if [ "$TESTS" == "" ]; then
   sudo npm test
 else

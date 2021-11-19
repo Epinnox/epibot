@@ -15,9 +15,9 @@ fi
 PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
 
 if [ ! "$PID" == "" ]; then
-        echo "epibot server is already running on port $PORT (PID: $PID)"
+        echo "The Epibot server is already running on port $PORT (PID: $PID)"
 else
-        echo "Starting epibot Server..."
+        echo "Now starting the Epibot Server..."
         cd "$SCRIPTPATH" &
         cd ../ &
         ./scripts/dbupgrade
@@ -28,6 +28,6 @@ else
                 sleep 2
                 PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
         done
-        echo "epibot server started on port $PORT"        
+        echo "The Epibot server has started on port $PORT"        
 	cd "$CURRENTPATH" &
 fi

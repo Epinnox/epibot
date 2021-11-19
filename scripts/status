@@ -13,7 +13,7 @@ fi
 PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
 
 if [ ! "$PID" == "" ]; then
-        echo "Epibot server is running on port $PORT (PID: $PID)"
+        echo "The epibot server is running on port $PORT (PID: $PID)"
 else
-        echo "Epibot server is not running"
+        echo "The epibot server is not running"
 fi

@@ -14,11 +14,11 @@ fi
 PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
 
 if [ ! "$PID" == "" ]; then
-        echo "Stopping epibot server on port $PORT (PID: $PID)..."
+        echo "Now stopping the epibot server on port $PORT (PID: $PID)..."
 	cd "$SCRIPTPATH" &
         cd ../ &
         sudo kill $PID > /dev/null 2>&1 &
         cd "$CURRENTPATH" &
 else
-	echo "epibot server is not currently started"
+	echo "The epibot server has not been started"
 fi

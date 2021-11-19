@@ -9,7 +9,7 @@ export DEBIAN_FRONTEND=noninteractive
 export DEBIAN_PRIORITY=critical
 sudo -E apt-get -qy update >> /tmp/install.log 2>&1
 
-echo "Installing prerequisite packages for Epibot..."
+echo "Installing prerequisite packages for the Epinnox Automated Bot..."
 sudo -E apt-get -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--force-confold" install nodejs npm jq wget git sqlite3 >> /tmp/install.log 2>&1
 
 echo "Cloning Epibot Github repository..."
