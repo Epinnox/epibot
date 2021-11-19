@@ -37,7 +37,7 @@ else
     DOSTART="false"
   fi
   TS=`date +%s`
-  echo "epibot server stopped successfully, upgrading now"
+  echo "The epibot server stopped successfully, upgrading now"
   echo "Creating a backup..."
   sudo tar czvf ~/$TS.tar.gz /usr/local/epibot-js  > /dev/null 2>&1
   mkdir -p "/tmp/$TS"
@@ -45,7 +45,7 @@ else
   sudo cp ./.dbcfg /tmp/$TS/
   sudo cp ./.port /tmp/$TS/
   sudo cp ./.proxy /tmp/$TS/
-  echo "Updating epibot files from Github"
+  echo "Updating Epibot files from Github"
   #sudo git checkout stable > /dev/null 2>&1
   sudo git stash 
   sudo git pull -f

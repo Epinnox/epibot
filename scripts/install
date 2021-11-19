@@ -30,7 +30,7 @@ epibot autostart
 
 cd "$CURRENTPATH" &
 
-echo "epibot install completed!"
+echo "The epibot installation is complete`!"
 echo ""
 echo "You can start the server using this command:   epibot start"
 echo "You can stop the server using this command:    epibot stop"
