@@ -14,7 +14,7 @@ sudo -E apt-get -qy -o "Dpkg::Options::=--force-confdef" -o "Dpkg::Options::=--f
 
 echo "Cloning Epibot Github repository..."
 sudo mkdir -p /usr/local && cd /usr/local/
-sudo git clone https://github.com/CryptoMF/epibot-js.git epibot-js >> /tmp/install.log 2>&1
+sudo git clone https://github.com/Epinnox/epibot.git epibot-js >> /tmp/install.log 2>&1
 
 echo "Setting permissions..."
 cd /usr/local/epibot-js
