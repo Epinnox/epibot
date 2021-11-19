@@ -24,7 +24,7 @@ if [ ! "$PID" == "" ]; then
     sleep 2
     PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
   done
-  echo "epibot server stopped"
+  echo "Epibot server has stopped"
   cd "$CURRENTPATH" &
   DOSTART="true"
 else
@@ -59,7 +59,7 @@ if [ "$DOSTART" == "true" ]; then
     sleep 2
     PID=`sudo ps -ax | grep "fb-$PORT" | grep -v "grep" | awk '{print $1}'`
   done
-  echo "epibot server started"
+  echo "The Epibot server has started"
 fi
 
 echo "Completed switching to $BRANCH"
